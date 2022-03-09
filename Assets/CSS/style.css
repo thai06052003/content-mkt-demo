@@ -39,9 +39,12 @@ html{
 .img{
     display: flex;
     justify-content: center;
-    cursor: pointer;
     opacity: 0.8;
     margin-top: 36px;
+}
+
+.letter{
+    cursor: pointer;
 }
 
 .letter.close{
