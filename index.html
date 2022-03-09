@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lời thì thầm từ con tim</title>
+        <meta charset="UTF-8">
+        <meta name="viewport", content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./Assets/CSS/style.css">
+    </head>
+
+    <body>
+        <div id="main">
+            <div id="heading">
+                <div class="about-text js-about-text">
+                    <p class="text">Bức thư gửi đến những kẻ mang vác nổi buồn trong dòng chảy của cuộc sống</p>
+                </div>
+
+                <div class="img">
+                    <img src="./Assets/img/thu.png" alt="" class="letter js-letter">
+                </div>
+            </div>
+
+            <div class="modal js-modal" >
+                <div class="modal-container js-modal-container">
+                    <div class="modal-fb">
+                        <img src="./Assets/img/phucbui.jpg" alt="" class="modal-fb-phuc">
+                        <a href="https://www.facebook.com/profile.php?id=100024056296922">FB: Phúc Bùi</a>
+                    </div>
+
+                    <div class="modal-content">
+                        <h3>𝑮𝒖̛̉𝒊 đ𝒆̂́𝒏 𝒏𝒉𝒖̛̃𝒏𝒈 𝒏𝒈𝒖̛𝒐̛̀𝒊 𝒄𝒐́ 𝒏𝒉𝒊𝒆̂̀𝒖 𝒏𝒐̂̃𝒊 𝒃𝒖𝒐̂̀𝒏 𝒕𝒓𝒐𝒏𝒈 𝒄𝒖𝒐̣̂𝒄 𝒔𝒐̂́𝒏𝒈</h3>
+                        <p class="modal-text">
+                            🔸 Theo các nghiên cứu khoa học, xác xuất để bạn được sinh ra với hình hài của một con người như hiện tại là 1 phần 400 nghìn tỷ, nghĩa là khả năng mà các bạn được ngồi đây và đọc bài viết này cũng như được tiếp cận với nền công nghệ tiên tiến của nhân loại như: smartphone, tivi, máy tính còn thấp hơn tỉ lệ các bạn trúng vé số. <br>
+                            🔸 Thế nên ,nếu như bạn cảm thấy cuộc sống này quá buồn chán, thì hãy nhớ rằng chúng ta đã may mắn hơn hàng nghìn tỷ sinh vật trên hành tinh này. <br>
+                            💗 𝑪𝒖𝒐̣̂𝒄 đ𝒐̛̀𝒊 𝒏𝒂̀𝒚 𝒍𝒂̀ 𝒄𝒖̉𝒂 𝒃𝒂̣𝒏, 𝒉𝒂̃𝒚 𝒔𝒐̂́𝒏𝒈 𝒕𝒉𝒆𝒐 𝒏𝒉𝒖̛̃𝒏𝒈 𝒈𝒊̀ 𝒎𝒊̀𝒏𝒉 𝒎𝒐𝒏𝒈 𝒎𝒖𝒐̂́𝒏 <br>
+                            🔸 Chúng ta thường do dự trước những quyết định của bản thân thậm chí quá để tâm đến những lời nói của người khác mà quên mất một điều rằng bạn chỉ sống duy nhất 1 lần và đó phải là một cuộc đời thật hạnh phúc. <br>
+                            🔸 Hãy thử một lần phá vỡ mọi rào cản, mặc kệ lời phán xét của người khác và làm những điều khiến bạn cảm thấy vui vẻ, hãy sống hết mình cho hôm nay để sau này có thể tự hào rằng bạn  cảm thấy hạnh phúc khi được sống trên cuộc đời này. <br>
+                            💗 𝑺𝒂𝒖 𝒄𝒖̀𝒏𝒈, 𝒕𝒉𝒖̛́ 𝒄𝒉𝒖́𝒏𝒈 𝒕𝒂 𝒄𝒂̂̀𝒏 𝒏𝒉𝒂̂́𝒕 𝒗𝒂̂̃𝒏 𝒍𝒂̀ 𝒉𝒂̣𝒏𝒉 𝒑𝒉𝒖́𝒄 <br>
+                            🔸 Cuộc sống như một chuyến đò bắt ngang qua con sông tử thần, bởi đôi khi thứ chúng ta cần không phải một chiếc đò quá hoàn mỹ mà chỉ cần được cập bến an toàn, tiền bạc dù nhiều đến đâu cũng chẳng thể mang đến cánh cổng thiên đàng,vậy nên hãy sống hết mình và trân trọng những gì mình đang có bởi vì bạn đã may mắn hơn rất nhiều người. <br>
+                            Cảm ơn các bạn đã đọc và chúc các bạn một ngày tốt lành ❤</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const letter = document.querySelector('.js-letter')
+            const modal = document.querySelector('.js-modal')
+            const close = document.querySelector('.js-about-text')
+            const modalContainer = document.querySelector('.js-modal-container')
+ 
+            function showModal(){
+                modal.classList.add('open')
+                close.classList.add('close')
+                letter.classList.add('close')
+            }
+
+            function closeModal(){
+                modal.classList.remove('open')
+                close.classList.remove('close')
+                letter.classList.remove('close')
+            }
+
+            letter.addEventListener('click', showModal) 
+            modal.addEventListener('click', closeModal)
+            modalContainer.addEventListener('click', function (event){
+                event.stopPropagation()
+            })
+        </script>
+    </body>
+</html>
